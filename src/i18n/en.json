@@ -1,0 +1,271 @@
+{
+  "app": {
+    "name": "Finma",
+    "fullName": "Finma — Financial Personal Management",
+    "tagline": "Your money, clearly tracked"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "financial": "Financial",
+    "analytics": "Analytics",
+    "fixedDeposit": "Fixed Deposit",
+    "compoundInterest": "Compound Interest",
+    "profitMargin": "Profit Margin",
+    "npv": "NPV",
+    "opportunityCost": "Opportunity Cost",
+    "marginalCostRevenue": "Marginal Cost & Revenue",
+    "loanRepayment": "Loan Repayment",
+    "stockRoiDividend": "Stock ROI & Dividend",
+    "knowledge": "Knowledge",
+    "settings": "Settings",
+    "signOut": "Sign out",
+    "signIn": "Sign in",
+    "admin": "Admin"
+  },
+  "sidebarSections": {
+    "calculators": "Calculators",
+    "more": "More"
+  },
+  "auth": {
+    "signInTitle": "Sign in to Finma",
+    "signInSubtitle": "Track your income, expenses, and investments in one place.",
+    "signInWithGoogle": "Continue with Google",
+    "signingIn": "Signing in…",
+    "lockedTitle": "Sign in to save your data",
+    "lockedSubtitle": "You can see how this works, but you'll need to sign in with Google before you can save or edit anything.",
+    "lockedTitleFeature": "Sign up to unlock this tool",
+    "lockedSubtitleFeature": "Fixed Deposit and Compound Interest are free to try. Sign in with Google to unlock every calculator and the ledger.",
+    "notSignedIn": "Not signed in",
+    "configUnavailableTitle": "Sign-in isn't available yet",
+    "configUnavailableSubtitle": "This app's Supabase backend hasn't been set up, so accounts and saved data aren't available right now. Free tools still work without signing in.",
+    "signInUnavailable": "Sign-in unavailable — Supabase isn't configured for this build"
+  },
+  "dashboard": {
+    "title": "Monthly Ledger",
+    "currentBalance": "Current balance",
+    "openingBalance": "Opening balance (rolled over)",
+    "income": "Income",
+    "expense": "Expense",
+    "addTransaction": "Add transaction",
+    "date": "Date",
+    "category": "Category",
+    "description": "Description",
+    "amount": "Amount",
+    "type": "Type",
+    "currency": "Currency",
+    "noTransactions": "No transactions yet this month.",
+    "exportCsv": "Export CSV",
+    "exportExcel": "Export Excel",
+    "rolloverNotice": "New month detected — {{amount}} carried over from {{month}}.",
+    "charts": {
+      "byCategory": "Income vs. expenses by category",
+      "balanceTrend": "Balance trend this month",
+      "pieNote": "Pie shows the expense side only — income and expense can't share one pie.",
+      "type": {
+        "bar": "Bar",
+        "line": "Line",
+        "area": "Area",
+        "pie": "Pie"
+      }
+    },
+    "categories": {
+      "salary": "Salary",
+      "business": "Business",
+      "food": "Food",
+      "transport": "Transport",
+      "utilities": "Utilities",
+      "rent": "Rent",
+      "health": "Health",
+      "education": "Education",
+      "savings": "Savings",
+      "other": "Other"
+    }
+  },
+  "calculators": {
+    "fixedDeposit": {
+      "title": "Fixed Deposit Calculator",
+      "subtitle": "Simple interest on a lump-sum deposit",
+      "principal": "Principal (P)",
+      "rate": "Annual interest rate (%)",
+      "termMonths": "Term (months)",
+      "interestEarned": "Interest earned",
+      "maturityValue": "Maturity value"
+    },
+    "compoundInterest": {
+      "title": "Compound Interest / Stock ROI",
+      "subtitle": "Future value with recurring monthly deposits",
+      "principal": "Initial investment (P)",
+      "monthlyDeposit": "Monthly deposit (PMT)",
+      "rate": "Annual interest rate (%)",
+      "years": "Time (years)",
+      "compounding": "Compounding frequency",
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "annually": "Annually",
+      "futureValue": "Future value",
+      "totalContributed": "Total contributed",
+      "totalInterest": "Total interest earned"
+    },
+    "profitMargin": {
+      "title": "Net Profit Margin",
+      "subtitle": "Profitability as a percentage of revenue",
+      "grossRevenue": "Gross revenue",
+      "netProfit": "Net profit",
+      "result": "Net profit margin"
+    },
+    "npv": {
+      "title": "Net Present Value (NPV)",
+      "subtitle": "Discounted cash flow analysis",
+      "initialInvestment": "Initial investment",
+      "discountRate": "Discount rate (%)",
+      "cashFlow": "Cash flow — Year {{year}}",
+      "addYear": "Add year",
+      "removeYear": "Remove",
+      "result": "NPV",
+      "verdictPositive": "Positive NPV — the investment is expected to add value.",
+      "verdictNegative": "Negative NPV — the investment is expected to destroy value."
+    },
+    "opportunityCost": {
+      "title": "Opportunity Cost Matrix",
+      "subtitle": "Compare what you chose against what you gave up",
+      "chosenLabel": "Chosen option",
+      "foregoneLabel": "Foregone option",
+      "optionName": "Option name",
+      "investment": "Investment amount",
+      "expectedReturn": "Expected return (%)",
+      "years": "Time (years)",
+      "absoluteReturn": "Absolute return",
+      "opportunityCost": "Opportunity cost",
+      "netAdvantage": "Net advantage of chosen option",
+      "verdictChosenBetter": "Your chosen option outperforms the alternative by {{amount}}.",
+      "verdictForegoneBetter": "The foregone option would have outperformed by {{amount}}."
+    },
+    "marginalCostRevenue": {
+      "title": "Marginal Cost & Revenue",
+      "subtitle": "The cost and revenue of producing one more unit",
+      "previousQuantity": "Previous quantity",
+      "newQuantity": "New quantity",
+      "previousCost": "Previous total cost",
+      "newCost": "New total cost",
+      "previousRevenue": "Previous total revenue",
+      "newRevenue": "New total revenue",
+      "marginalCost": "Marginal cost",
+      "marginalRevenue": "Marginal revenue",
+      "marginalProfit": "Marginal profit (MR − MC)",
+      "verdict": {
+        "expand": "Marginal revenue exceeds marginal cost — producing more is expected to add profit.",
+        "reduce": "Marginal cost exceeds marginal revenue — producing more is expected to reduce profit.",
+        "optimal": "Marginal revenue and marginal cost are about equal — this is close to the profit-maximizing output."
+      }
+    },
+    "loanRepayment": {
+      "title": "Loan Repayment Calculator",
+      "subtitle": "Monthly payment for an amortizing loan",
+      "principal": "Loan amount (P)",
+      "rate": "Annual interest rate (%)",
+      "termMonths": "Term (months)",
+      "monthlyPayment": "Monthly payment",
+      "totalRepayment": "Total repayment",
+      "totalInterest": "Total interest paid"
+    },
+    "stockRoiDividend": {
+      "title": "Stock ROI & Dividend",
+      "subtitle": "Total return from price gains and dividends",
+      "purchasePrice": "Purchase price",
+      "currentPrice": "Current / sale price",
+      "dividendsReceived": "Dividends received",
+      "holdingYears": "Holding period (years)",
+      "capitalGain": "Capital gain",
+      "totalReturn": "Total return",
+      "roiPct": "ROI",
+      "dividendYieldPct": "Dividend yield",
+      "annualizedRoiPct": "Annualized ROI"
+    }
+  },
+  "financial": {
+    "subtitle": "Record your income and expenses for this month.",
+    "saveFailed": "Couldn't save this transaction — check your connection and try again."
+  },
+  "knowledge": {
+    "subtitle": "A short guide to what each calculator does and when to use it.",
+    "whenToUse": "When to use it",
+    "fixedDeposit": {
+      "explanation": "A fixed deposit locks a lump sum with a bank for a set term in exchange for a guaranteed interest rate. Interest accrues only on the original principal (simple interest), not on interest already earned.",
+      "formula": "I = P × (r ÷ 100) × (t ÷ 12)",
+      "whenToUse": "Comparing short-to-medium term savings that pay simple interest, such as most bank term deposits."
+    },
+    "compoundInterest": {
+      "explanation": "Compound interest grows your money on both the principal and the interest already earned, and can include regular monthly contributions on top of an initial investment.",
+      "formula": "FV = P(1+r/n)^(nt) + PMT × [((1+r/n)^(nt) − 1) ÷ (r/n)]",
+      "whenToUse": "Long-term investments like stock index funds, retirement accounts, or any plan with regular contributions."
+    },
+    "profitMargin": {
+      "explanation": "Net profit margin shows how much of every unit of revenue a business keeps as profit after all expenses, taxes, and costs are paid.",
+      "formula": "Net Profit Margin (%) = (Net Profit ÷ Gross Revenue) × 100",
+      "whenToUse": "Comparing a business's profitability over time, or against competitors, regardless of size."
+    },
+    "npv": {
+      "explanation": "Net Present Value discounts a series of future cash flows back to today's value using a chosen discount rate, then subtracts the initial investment.",
+      "formula": "NPV = Σ [CFₜ ÷ (1+r)ᵗ] − Initial Investment",
+      "whenToUse": "Deciding whether a project or investment is worth pursuing — a positive NPV means it's expected to add value."
+    },
+    "opportunityCost": {
+      "explanation": "Opportunity cost compares the return of the option you chose against the return you gave up by not choosing the alternative.",
+      "formula": "Opportunity Cost = FV(foregone option) − FV(chosen option)",
+      "whenToUse": "Choosing between two investments or uses of the same money, to see exactly what you'd be giving up."
+    },
+    "marginalCostRevenue": {
+      "explanation": "Marginal cost and marginal revenue measure the extra cost and extra income from producing just one more unit — not the average across everything you've made so far.",
+      "formula": "MC = ΔTotal Cost ÷ ΔQuantity, MR = ΔTotal Revenue ÷ ΔQuantity",
+      "whenToUse": "Deciding whether to produce more or less — profit is maximized where marginal revenue equals marginal cost."
+    },
+    "loanRepayment": {
+      "explanation": "An amortizing loan is repaid in equal monthly installments that include both interest and principal, with the interest portion shrinking and the principal portion growing over the loan's term.",
+      "formula": "PMT = P × r × (1+r)ⁿ ÷ [(1+r)ⁿ − 1]",
+      "whenToUse": "Estimating the monthly payment and total interest for a mortgage, car loan, or any fixed-term installment loan."
+    },
+    "stockRoiDividend": {
+      "explanation": "Total return on a stock combines two sources: the change in its price (capital gain or loss) and any dividends paid out while you held it.",
+      "formula": "ROI (%) = (Capital Gain + Dividends) ÷ Purchase Price × 100",
+      "whenToUse": "Evaluating how a stock actually performed for you, not just its price change — dividends can be a large part of total return."
+    }
+  },
+  "analytics": {
+    "savingsRate": "Savings rate",
+    "expenseRatio": "Expense-to-income ratio",
+    "breakdownTitle": "Expense breakdown by category"
+  },
+  "settings": {
+    "title": "Account Settings",
+    "profile": "Profile",
+    "name": "Name",
+    "email": "Email",
+    "primaryCurrency": "Primary currency",
+    "language": "Language",
+    "save": "Save changes",
+    "saved": "Settings saved."
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "loading": "Loading…",
+    "total": "Total",
+    "syncError": "Sync error — your data may not be up to date or saved: {{message}}",
+    "freeBadge": "Free",
+    "on": "On",
+    "off": "Off"
+  },
+  "admin": {
+    "notAuthorized": "You don't have access to this page.",
+    "totalUsers": "Registered users",
+    "maintenanceMode": "Maintenance mode",
+    "maintenanceModeDesc": "When enabled, everyone except you sees a maintenance notice instead of the app. Use this while making changes or fixing something.",
+    "enableMaintenance": "Enable maintenance mode",
+    "disableMaintenance": "Disable maintenance mode"
+  },
+  "maintenance": {
+    "title": "Finma is under maintenance",
+    "body": "We're making some updates and will be back shortly. Thanks for your patience."
+  }
+}

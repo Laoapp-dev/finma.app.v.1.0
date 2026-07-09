@@ -1,0 +1,4 @@
+project_id = "finma"
+
+[db]
+major_version = 15
